@@ -6,7 +6,6 @@ tmp/
 
 # Package cache
 .cache/
-*.txpkg
 
 # Logs
 *.log

@@ -8,5 +8,7 @@
   "homepage": "https://busybox.net",
   "maintainer": "TX Packages Team",
   "description": "BusyBox multicall binary for TX Terminal",
-  "dependencies": []
+  "dependencies": [],
+  "filename": "busybox-1.37.0-1.aarch64.txpkg",
+  "sha256": ""
 }
