@@ -1,0 +1,12 @@
+{
+  "name": "busybox",
+  "version": "1.37.0",
+  "release": 1,
+  "architecture": "aarch64",
+  "category": "core",
+  "license": "GPL-2.0",
+  "homepage": "https://busybox.net",
+  "maintainer": "TX Packages Team",
+  "description": "BusyBox multicall binary for TX Terminal",
+  "dependencies": []
+}

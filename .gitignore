@@ -1,0 +1,22 @@
+# Build output
+build/
+dist/
+out/
+tmp/
+
+# Package cache
+.cache/
+*.txpkg
+
+# Logs
+*.log
+
+# Editor files
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Android
+local.properties

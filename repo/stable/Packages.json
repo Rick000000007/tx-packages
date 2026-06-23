@@ -1,0 +1,14 @@
+{
+  "repository": "TX Stable",
+  "version": 1,
+  "architecture": "aarch64",
+  "packages": [
+    {
+      "name": "busybox",
+      "version": "1.37.0",
+      "release": 1,
+      "category": "core",
+      "description": "BusyBox multicall binary for TX Terminal"
+    }
+  ]
+}
