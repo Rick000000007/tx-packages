@@ -1,0 +1,10 @@
+#!/system/bin/sh
+
+echo
+echo "TX Nano Editor"
+echo "================"
+echo
+echo "Nano package installed successfully."
+echo
+echo "This is a placeholder package."
+echo

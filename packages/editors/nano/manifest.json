@@ -1,0 +1,9 @@
+{
+  "name": "nano",
+  "version": "1.0.0",
+  "release": 1,
+  "architecture": "aarch64",
+  "category": "editors",
+  "description": "Lightweight terminal editor",
+  "maintainer": "TX Project"
+}
