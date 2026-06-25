@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+echo
+echo "TX Git"
+echo "======"
+echo
+echo "Git package placeholder"
+echo "Version: 2.50.0"
+echo

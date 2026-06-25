@@ -1,0 +1,7 @@
+{
+  "name": "git",
+  "version": "2.50.0",
+  "release": 1,
+  "category": "dev",
+  "description": "Distributed version control system"
+}
