@@ -5,4 +5,4 @@ Maintainer: TX Project
 Section: editors
 Description: Lightweight terminal editor
 Category: editors
-Depends:
+Depends: busybox
