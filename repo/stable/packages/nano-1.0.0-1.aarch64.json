@@ -1,15 +1,7 @@
 {
-  "repository": "TX Stable",
-  "version": 1,
-  "architecture": "aarch64",
-  "packages": [
-{
   "name":"nano",
   "version":"1.0.0-1",
   "architecture":"aarch64",
   "filename":"nano-1.0.0-1.aarch64.txpkg",
   "description":"Lightweight terminal editor"
-}
-
-  ]
 }
