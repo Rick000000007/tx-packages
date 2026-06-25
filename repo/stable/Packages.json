@@ -8,6 +8,8 @@
   "version":"1.0.0-1",
   "architecture":"aarch64",
   "filename":"nano-1.0.0-1.aarch64.txpkg",
+  "sha256":"1a5bdb00cb0c367b7e066a81a747743d234af7d366c12fc73dcda4f8fb85c2bd",
+  "category":"editors",
   "description":"Lightweight terminal editor"
 }
 
