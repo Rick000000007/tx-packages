@@ -3,7 +3,8 @@
   "version":"1.0.0-1",
   "architecture":"aarch64",
   "filename":"nano-1.0.0-1.aarch64.txpkg",
-  "sha256":"1a5bdb00cb0c367b7e066a81a747743d234af7d366c12fc73dcda4f8fb85c2bd",
+  "sha256":"42e2d3f1c1a7b68d9a121f4b8cbef604b3326eeabb9029f2d3105304eeccfe57",
   "category":"editors",
+  "depends":"busybox",
   "description":"Lightweight terminal editor"
 }
