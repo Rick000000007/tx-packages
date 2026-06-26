@@ -1,0 +1,18 @@
+{
+  "name": "procps",
+  "version": "4.0.4",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-2.0+",
+  "description": "Proc filesystem utilities",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/procps-ng",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "system",
+  "essential": false,
+  "depends": "musl ncurses-libs",
+  "provides": "ps top free pgrep pkill",
+  "conflicts": "",
+  "sha256": "183298aea980a9bcbb201c53ac60e2d69e7bff5a25cdcd6f2eb3781ff684e88b",
+  "size": 130776,
+  "installed_size": 1215656
+}

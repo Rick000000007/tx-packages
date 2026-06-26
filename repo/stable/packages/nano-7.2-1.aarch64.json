@@ -1,0 +1,18 @@
+{
+  "name": "nano",
+  "version": "7.2",
+  "release": 1,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Lightweight terminal text editor",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/nano",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "editors",
+  "essential": false,
+  "depends": "musl ncurses-libs ncurses-terminfo",
+  "provides": "editor",
+  "conflicts": "",
+  "sha256": "dd4580842736fe46c8b96019d643ee7ba48924d4c426ff7172be74924f07f0b7",
+  "size": 122636,
+  "installed_size": 675896
+}

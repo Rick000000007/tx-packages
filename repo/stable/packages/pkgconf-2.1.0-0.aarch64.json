@@ -1,0 +1,18 @@
+{
+  "name": "pkgconf",
+  "version": "2.1.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "ISC",
+  "description": "Package compiler and linker metadata tool",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/pkgconf",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "development",
+  "essential": false,
+  "depends": "musl",
+  "provides": "pkg-config",
+  "conflicts": "",
+  "sha256": "f7f49760235ac585050b5e711bac0f09d87e8ad8fdf6ad534a366b8bad670df7",
+  "size": 38232,
+  "installed_size": 218023
+}

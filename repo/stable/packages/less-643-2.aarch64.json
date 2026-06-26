@@ -1,0 +1,18 @@
+{
+  "name": "less",
+  "version": "643",
+  "release": 2,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Terminal pager program",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/less",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "system",
+  "essential": false,
+  "depends": "musl ncurses-libs pcre2",
+  "provides": "pager",
+  "conflicts": "",
+  "sha256": "565c24ec94499a472b1520546ac6841ec42f183166e82540e882e1cc76685f0f",
+  "size": 73852,
+  "installed_size": 352352
+}

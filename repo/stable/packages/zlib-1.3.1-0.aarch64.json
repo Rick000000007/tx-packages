@@ -1,0 +1,18 @@
+{
+  "name": "zlib",
+  "version": "1.3.1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Zlib",
+  "description": "Compression library implementing the deflate compression method",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/zlib",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "963bfcd858dad7ee31c9089701b6bf7b0a2077921d04d1e427650fafb846f381",
+  "size": 43248,
+  "installed_size": 132960
+}

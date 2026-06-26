@@ -1,0 +1,18 @@
+{
+  "name": "unzip",
+  "version": "6.0",
+  "release": 14,
+  "architecture": "aarch64",
+  "license": "Info-ZIP",
+  "description": "Info-ZIP decompression utility",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/unzip",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "280257b85d326c5af7549d89ef15478f89f2068133b77c3cff757e8bdfeedcbe",
+  "size": 95328,
+  "installed_size": 600049
+}

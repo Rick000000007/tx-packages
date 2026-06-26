@@ -1,8 +1,0 @@
-Package: nano
-Version: 1.0.0-1
-Architecture: aarch64
-Maintainer: TX Project
-Section: editors
-Description: Lightweight terminal editor
-Category: editors
-Depends: busybox

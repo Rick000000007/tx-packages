@@ -1,0 +1,18 @@
+{
+  "name": "libedit",
+  "version": "20230828.3.1",
+  "release": 3,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "BSD line editing library",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/libedit",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "musl ncurses-libs",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "cccd2510af6974c79514ed2855e6cdc73a877ab0b00ad9c63ff88c263e85e5b5",
+  "size": 62216,
+  "installed_size": 264024
+}

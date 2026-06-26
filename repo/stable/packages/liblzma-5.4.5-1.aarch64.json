@@ -1,0 +1,18 @@
+{
+  "name": "liblzma",
+  "version": "5.4.5",
+  "release": 1,
+  "architecture": "aarch64",
+  "license": "LGPL-2.1+",
+  "description": "XZ format compression library",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/xz-libs",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "2ccb9e789a0fc7380958f1b377c00868921493ac6618af26883ff698a71ef3fd",
+  "size": 92640,
+  "installed_size": 263872
+}

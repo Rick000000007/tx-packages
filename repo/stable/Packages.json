@@ -1,18 +1,550 @@
 {
-  "repository": "TX Stable",
-  "version": 1,
+  "repository": "TX Official Stable",
+  "version": 2,
+  "format_version": 2,
+  "metadata_version": 2,
   "architecture": "aarch64",
+  "channel": "stable",
   "packages": [
-{
-  "name":"nano",
-  "version":"1.0.0-1",
-  "architecture":"aarch64",
-  "filename":"nano-1.0.0-1.aarch64.txpkg",
-  "sha256":"42e2d3f1c1a7b68d9a121f4b8cbef604b3326eeabb9029f2d3105304eeccfe57",
-  "category":"editors",
-  "depends":"busybox",
-  "description":"Lightweight terminal editor"
-}
-
+    {
+      "name": "acl",
+      "version": "2.3.1-4",
+      "architecture": "aarch64",
+      "filename": "acl-2.3.1-4.aarch64.txpkg",
+      "sha256": "f608cbdfdb4f5f34546ff5d3799452604d39103622417d1c7e094dee910b5d5a",
+      "category": "libraries",
+      "depends": "musl attr",
+      "description": "Access Control List library"
+    },
+    {
+      "name": "attr",
+      "version": "2.5.1-5",
+      "architecture": "aarch64",
+      "filename": "attr-2.5.1-5.aarch64.txpkg",
+      "sha256": "fecd521bb1dfe7d175603c8bbad0c1edcb0183269fdc5eb7d87b973f29968305",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Extended attribute library"
+    },
+    {
+      "name": "brotli-libs",
+      "version": "1.1.0-1",
+      "architecture": "aarch64",
+      "filename": "brotli-libs-1.1.0-1.aarch64.txpkg",
+      "sha256": "6fd9607ed3601e4a4df9438e8cd05c264babe6ab0354d14b4bbd2c095630a4af",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Brotli compression library"
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8-6",
+      "architecture": "aarch64",
+      "filename": "bzip2-1.0.8-6.aarch64.txpkg",
+      "sha256": "e4ee2047b544e6bb919be88bedf107e96ac6c689a24ba155e5ff2888bc4065af",
+      "category": "compression",
+      "depends": "musl libbz2",
+      "description": "Bzip2 compression utility"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20250911-0",
+      "architecture": "aarch64",
+      "filename": "ca-certificates-20250911-0.aarch64.txpkg",
+      "sha256": "4646aaed95f157bfadf3da041fb8c071ad576d51ac8af5508b55a6811d14a362",
+      "category": "security",
+      "depends": "musl",
+      "description": "Common CA certificates bundle for SSL/TLS"
+    },
+    {
+      "name": "ca-certificates-bundle",
+      "version": "20250911-0",
+      "architecture": "aarch64",
+      "filename": "ca-certificates-bundle-20250911-0.aarch64.txpkg",
+      "sha256": "9d40ec6857abfac1abb59078fd2a1463dd18e216b200cf71ec6fdeb54359ea5a",
+      "category": "security",
+      "depends": "musl",
+      "description": "Pre-generated CA certificates bundle"
+    },
+    {
+      "name": "coreutils",
+      "version": "9.4-2",
+      "architecture": "aarch64",
+      "filename": "coreutils-9.4-2.aarch64.txpkg",
+      "sha256": "ba87eb0729a7eb649af04e3295ca9a8afe567866003407b300edb84ce1432b51",
+      "category": "system",
+      "depends": "musl acl gmp libcap",
+      "description": "GNU core utilities"
+    },
+    {
+      "name": "curl",
+      "version": "8.14.1-2",
+      "architecture": "aarch64",
+      "filename": "curl-8.14.1-2.aarch64.txpkg",
+      "sha256": "0d698dd97850945a262fda0b1f4f4517145d3f891b7a0d8d22731b02e6197311",
+      "category": "network",
+      "depends": "musl openssl zlib libssh2 nghttp2-libs brotli-libs zstd",
+      "description": "Command-line tool for transferring data with URLs"
+    },
+    {
+      "name": "diffutils",
+      "version": "3.10-0",
+      "architecture": "aarch64",
+      "filename": "diffutils-3.10-0.aarch64.txpkg",
+      "sha256": "de4e50e5aa2cbe8f70dca3e12ee85cf781eea9416cd3a3940df6ee1e7b7a794b",
+      "category": "system",
+      "depends": "musl",
+      "description": "GNU diff utilities for comparing files"
+    },
+    {
+      "name": "file",
+      "version": "5.45-1",
+      "architecture": "aarch64",
+      "filename": "file-5.45-1.aarch64.txpkg",
+      "sha256": "ccdc6d85603423abb503a28d133054dee37053593109d36c3564df29b69c8630",
+      "category": "system",
+      "depends": "musl libmagic",
+      "description": "Utility to determine file types"
+    },
+    {
+      "name": "findutils",
+      "version": "4.9.0-5",
+      "architecture": "aarch64",
+      "filename": "findutils-4.9.0-5.aarch64.txpkg",
+      "sha256": "9ff26b9b405fb74bb1c3ca5df8e4bcf522f397d9a6d123757d1434c25465dc1e",
+      "category": "system",
+      "depends": "musl",
+      "description": "GNU utilities for finding files"
+    },
+    {
+      "name": "gawk",
+      "version": "5.3.0-1",
+      "architecture": "aarch64",
+      "filename": "gawk-5.3.0-1.aarch64.txpkg",
+      "sha256": "3cb6ea22edfe4fd7e25d24354396e42bfab89ac6edb364a8968c21481270fd0a",
+      "category": "system",
+      "depends": "musl mpfr4 readline",
+      "description": "GNU awk - pattern scanning and processing language"
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0-0",
+      "architecture": "aarch64",
+      "filename": "gmp-6.3.0-0.aarch64.txpkg",
+      "sha256": "6d0d6eea485b44336eb5214c090f31612c39fee9100f3dc0236e66c5926d75a5",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "GNU multiple precision arithmetic library"
+    },
+    {
+      "name": "grep",
+      "version": "3.11-0",
+      "architecture": "aarch64",
+      "filename": "grep-3.11-0.aarch64.txpkg",
+      "sha256": "d848136ca19ce58970f43f6d82c431bcbdc214d02f1e64b356477ceda78bba37",
+      "category": "system",
+      "depends": "musl pcre2",
+      "description": "GNU grep - pattern matching utilities"
+    },
+    {
+      "name": "gzip",
+      "version": "1.13-0",
+      "architecture": "aarch64",
+      "filename": "gzip-1.13-0.aarch64.txpkg",
+      "sha256": "4e1e73a211f4ead018b378447705c2aa1160cda42b50dbe6f3cb21bf4af4337a",
+      "category": "compression",
+      "depends": "musl",
+      "description": "GNU gzip compression utility"
+    },
+    {
+      "name": "less",
+      "version": "643-2",
+      "architecture": "aarch64",
+      "filename": "less-643-2.aarch64.txpkg",
+      "sha256": "565c24ec94499a472b1520546ac6841ec42f183166e82540e882e1cc76685f0f",
+      "category": "system",
+      "depends": "musl ncurses-libs pcre2",
+      "description": "Terminal pager program"
+    },
+    {
+      "name": "libbz2",
+      "version": "1.0.8-6",
+      "architecture": "aarch64",
+      "filename": "libbz2-1.0.8-6.aarch64.txpkg",
+      "sha256": "b0a1b295a4b16317738fca62d3a1b7fab0a4f603c566d578df04400b47bd7414",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Compression library for bzip2 format"
+    },
+    {
+      "name": "libcap",
+      "version": "2.69-1",
+      "architecture": "aarch64",
+      "filename": "libcap-2.69-1.aarch64.txpkg",
+      "sha256": "5a9128ab9212fe4abc02c4f2cecbe0b775f089a062979339944e2baf9eaf5605",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "POSIX capabilities library"
+    },
+    {
+      "name": "libedit",
+      "version": "20230828.3.1-3",
+      "architecture": "aarch64",
+      "filename": "libedit-20230828.3.1-3.aarch64.txpkg",
+      "sha256": "cccd2510af6974c79514ed2855e6cdc73a877ab0b00ad9c63ff88c263e85e5b5",
+      "category": "libraries",
+      "depends": "musl ncurses-libs",
+      "description": "BSD line editing library"
+    },
+    {
+      "name": "libexpat",
+      "version": "2.7.3-0",
+      "architecture": "aarch64",
+      "filename": "libexpat-2.7.3-0.aarch64.txpkg",
+      "sha256": "c2da26352019076e38414d919f77e70237952068121595aae3d2e6b0afda436f",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "XML parsing C library"
+    },
+    {
+      "name": "libffi",
+      "version": "3.4.4-3",
+      "architecture": "aarch64",
+      "filename": "libffi-3.4.4-3.aarch64.txpkg",
+      "sha256": "265ef6ffce01931c98001386cb812a767aa1d6caf18c2cbdb50eb51086e858da",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Foreign Function Interface library"
+    },
+    {
+      "name": "libgcc",
+      "version": "13.2.1_git20231014-0",
+      "architecture": "aarch64",
+      "filename": "libgcc-13.2.1_git20231014-0.aarch64.txpkg",
+      "sha256": "39f90fb81e561b0d0623824081e1bf7d2fc4126fca616af6c8d7f119c7aa22ad",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "GCC runtime libraries"
+    },
+    {
+      "name": "libidn2",
+      "version": "2.3.4-4",
+      "architecture": "aarch64",
+      "filename": "libidn2-2.3.4-4.aarch64.txpkg",
+      "sha256": "c61d1a49f0d20702e2e691c2ba020b820a319870bd4e21d1aa5b44e351158007",
+      "category": "libraries",
+      "depends": "musl libunistring",
+      "description": "Internationalized domain names library"
+    },
+    {
+      "name": "liblzma",
+      "version": "5.4.5-1",
+      "architecture": "aarch64",
+      "filename": "liblzma-5.4.5-1.aarch64.txpkg",
+      "sha256": "2ccb9e789a0fc7380958f1b377c00868921493ac6618af26883ff698a71ef3fd",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "XZ format compression library"
+    },
+    {
+      "name": "libmagic",
+      "version": "5.45-1",
+      "architecture": "aarch64",
+      "filename": "libmagic-5.45-1.aarch64.txpkg",
+      "sha256": "f4b4134daecf628f2fe006f39dffea225ed537cd143c580193fba6f5161d7935",
+      "category": "libraries",
+      "depends": "musl zlib liblzma libbz2",
+      "description": "File type identification library"
+    },
+    {
+      "name": "libssh2",
+      "version": "1.11.0-1",
+      "architecture": "aarch64",
+      "filename": "libssh2-1.11.0-1.aarch64.txpkg",
+      "sha256": "181cc1b84da11593aa30dea94a594c5122a5232e3c0c38e3cdde3873ab3efbd2",
+      "category": "libraries",
+      "depends": "musl openssl zlib",
+      "description": "Client-side library for SSH2 protocol"
+    },
+    {
+      "name": "libstdc++",
+      "version": "13.2.1_git20231014-0",
+      "architecture": "aarch64",
+      "filename": "libstdc++-13.2.1_git20231014-0.aarch64.txpkg",
+      "sha256": "71a9e378d1c856ab28db00b504f10b9c8f6f527d10a7af05fb28b359c19e2eb4",
+      "category": "libraries",
+      "depends": "musl libgcc",
+      "description": "GNU Standard C++ Library"
+    },
+    {
+      "name": "libunistring",
+      "version": "1.1-2",
+      "architecture": "aarch64",
+      "filename": "libunistring-1.1-2.aarch64.txpkg",
+      "sha256": "fcbe4a2c0889338a4feaa5f3279c0897491d38fa529bc0d63546605db59b8e80",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Unicode string manipulation library"
+    },
+    {
+      "name": "libzstd",
+      "version": "1.5.5-8",
+      "architecture": "aarch64",
+      "filename": "libzstd-1.5.5-8.aarch64.txpkg",
+      "sha256": "7573be3d7711cfed8aa2069abdbcb462d3ba91a74fefd4abaa0719969fea3387",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Zstandard compression library"
+    },
+    {
+      "name": "lz4",
+      "version": "1.9.4-5",
+      "architecture": "aarch64",
+      "filename": "lz4-1.9.4-5.aarch64.txpkg",
+      "sha256": "d46f1a956ae6d3ed699adad7c22939d97316e19812438bdc5f057585b7612fb7",
+      "category": "compression",
+      "depends": "musl",
+      "description": "LZ4 compression utilities"
+    },
+    {
+      "name": "make",
+      "version": "4.4.1-2",
+      "architecture": "aarch64",
+      "filename": "make-4.4.1-2.aarch64.txpkg",
+      "sha256": "03165e682b10e0666b947eb9f88a3e218cb0771fb678dd9eeff17b404c1f8b97",
+      "category": "development",
+      "depends": "musl",
+      "description": "GNU make - build automation tool"
+    },
+    {
+      "name": "mpfr4",
+      "version": "4.2.1-0",
+      "architecture": "aarch64",
+      "filename": "mpfr4-4.2.1-0.aarch64.txpkg",
+      "sha256": "64422c0025ea2da3e7a2f35f44281c1c50a0d5f860c6287ddedf8cfd5cfe78fa",
+      "category": "libraries",
+      "depends": "musl gmp",
+      "description": "Multiple-precision floating-point library"
+    },
+    {
+      "name": "musl",
+      "version": "1.2.4_git20230717-6",
+      "architecture": "aarch64",
+      "filename": "musl-1.2.4_git20230717-6.aarch64.txpkg",
+      "sha256": "bd5fcf210bf2edbd156657f236dfc606bc838e47284f3d44fcd8256b0ef7d661",
+      "category": "libraries",
+      "depends": "",
+      "description": "Musl C library"
+    },
+    {
+      "name": "nano",
+      "version": "7.2-1",
+      "architecture": "aarch64",
+      "filename": "nano-7.2-1.aarch64.txpkg",
+      "sha256": "dd4580842736fe46c8b96019d643ee7ba48924d4c426ff7172be74924f07f0b7",
+      "category": "editors",
+      "depends": "musl ncurses-libs ncurses-terminfo",
+      "description": "Lightweight terminal text editor"
+    },
+    {
+      "name": "ncurses-libs",
+      "version": "6.4_p20231125-0",
+      "architecture": "aarch64",
+      "filename": "ncurses-libs-6.4_p20231125-0.aarch64.txpkg",
+      "sha256": "02c29874624377fcddb27547974a42fd4a9c9796d426c7ff769ae0e6cb03b22c",
+      "category": "libraries",
+      "depends": "musl ncurses-terminfo",
+      "description": "Ncurses terminal handling library"
+    },
+    {
+      "name": "ncurses-terminfo",
+      "version": "6.4_p20231125-0",
+      "architecture": "aarch64",
+      "filename": "ncurses-terminfo-6.4_p20231125-0.aarch64.txpkg",
+      "sha256": "15c9a5a9e7521b2aeba4b5bf2e55e91e9be537f7e92e0f929c02198bf8e94033",
+      "category": "libraries",
+      "depends": "",
+      "description": "Ncurses terminal database"
+    },
+    {
+      "name": "nghttp2-libs",
+      "version": "1.58.0-0",
+      "architecture": "aarch64",
+      "filename": "nghttp2-libs-1.58.0-0.aarch64.txpkg",
+      "sha256": "2fc569abed7e516f88102988dd5359668b4f19cb6ba0d74da8f465fbf4943a84",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "HTTP/2 C library"
+    },
+    {
+      "name": "openssh-client",
+      "version": "9.6_p1-2",
+      "architecture": "aarch64",
+      "filename": "openssh-client-9.6_p1-2.aarch64.txpkg",
+      "sha256": "a79e8f64a50674859582f2d565bc705dd9cc9b28318b589a18a42589eb4dc81b",
+      "category": "network",
+      "depends": "musl openssl zlib libedit",
+      "description": "OpenSSH client"
+    },
+    {
+      "name": "openssl",
+      "version": "3.1.8-1",
+      "architecture": "aarch64",
+      "filename": "openssl-3.1.8-1.aarch64.txpkg",
+      "sha256": "0220182a64e325326ebe687c5f758c6aa951a41acad45eb1f958cddc3cb38f2e",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Toolkit for TLS and SSL protocols"
+    },
+    {
+      "name": "patch",
+      "version": "2.7.6-10",
+      "architecture": "aarch64",
+      "filename": "patch-2.7.6-10.aarch64.txpkg",
+      "sha256": "fced742e09250d26352e38f0d38f5c347859a84beb95336928958204a3b63a51",
+      "category": "development",
+      "depends": "musl",
+      "description": "GNU patch - apply a diff file to an original"
+    },
+    {
+      "name": "pcre2",
+      "version": "10.42-2",
+      "architecture": "aarch64",
+      "filename": "pcre2-10.42-2.aarch64.txpkg",
+      "sha256": "ae2f273b6ac0326a253e39a25f2877de2b4ed95269addfc578c2d68bbaf05dc5",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Perl-compatible regular expression library"
+    },
+    {
+      "name": "pkgconf",
+      "version": "2.1.0-0",
+      "architecture": "aarch64",
+      "filename": "pkgconf-2.1.0-0.aarch64.txpkg",
+      "sha256": "f7f49760235ac585050b5e711bac0f09d87e8ad8fdf6ad534a366b8bad670df7",
+      "category": "development",
+      "depends": "musl",
+      "description": "Package compiler and linker metadata tool"
+    },
+    {
+      "name": "procps",
+      "version": "4.0.4-0",
+      "architecture": "aarch64",
+      "filename": "procps-4.0.4-0.aarch64.txpkg",
+      "sha256": "183298aea980a9bcbb201c53ac60e2d69e7bff5a25cdcd6f2eb3781ff684e88b",
+      "category": "system",
+      "depends": "musl ncurses-libs",
+      "description": "Proc filesystem utilities"
+    },
+    {
+      "name": "psmisc",
+      "version": "23.6-2",
+      "architecture": "aarch64",
+      "filename": "psmisc-23.6-2.aarch64.txpkg",
+      "sha256": "c6f3e723978a05d3610b9bada7a0b89bf38a03267499ae0ee3ee2d5e35a74d10",
+      "category": "system",
+      "depends": "musl",
+      "description": "Miscellaneous procfs utilities - fuser, killall, pstree"
+    },
+    {
+      "name": "readline",
+      "version": "8.2.1-2",
+      "architecture": "aarch64",
+      "filename": "readline-8.2.1-2.aarch64.txpkg",
+      "sha256": "d6013395de60fd3d77157eca3ec0b1d4e5f88cd5ba8aa6d25ebbce47580c0545",
+      "category": "libraries",
+      "depends": "musl ncurses-libs",
+      "description": "GNU readline library for line editing"
+    },
+    {
+      "name": "sed",
+      "version": "4.9-2",
+      "architecture": "aarch64",
+      "filename": "sed-4.9-2.aarch64.txpkg",
+      "sha256": "e2c095536b04103a6dd3327be2ba1d0c0adf19fb19dbf2af5dea0fdb7a158667",
+      "category": "system",
+      "depends": "musl",
+      "description": "GNU stream editor"
+    },
+    {
+      "name": "tar",
+      "version": "1.35-2",
+      "architecture": "aarch64",
+      "filename": "tar-1.35-2.aarch64.txpkg",
+      "sha256": "3e432144d8f39356837713fa4939422cd0d59f4ce9234e6b18cf4a4afbfd2a77",
+      "category": "compression",
+      "depends": "musl acl",
+      "description": "GNU tar archiving utility"
+    },
+    {
+      "name": "unzip",
+      "version": "6.0-14",
+      "architecture": "aarch64",
+      "filename": "unzip-6.0-14.aarch64.txpkg",
+      "sha256": "280257b85d326c5af7549d89ef15478f89f2068133b77c3cff757e8bdfeedcbe",
+      "category": "compression",
+      "depends": "musl",
+      "description": "Info-ZIP decompression utility"
+    },
+    {
+      "name": "wget",
+      "version": "1.21.4-0",
+      "architecture": "aarch64",
+      "filename": "wget-1.21.4-0.aarch64.txpkg",
+      "sha256": "0cc37e477d9151173a36b150dc7fbe06e60955e3e914079fa9784a0453b3a755",
+      "category": "network",
+      "depends": "musl openssl pcre2 libidn2",
+      "description": "Network utility to retrieve files from the Web"
+    },
+    {
+      "name": "which",
+      "version": "2.21-4",
+      "architecture": "aarch64",
+      "filename": "which-2.21-4.aarch64.txpkg",
+      "sha256": "197036471d8157784d889c4df294e508a8e845f0ed8b44f6f3a8f7a8a4df2857",
+      "category": "system",
+      "depends": "musl",
+      "description": "Utility to locate programs in the PATH"
+    },
+    {
+      "name": "xz",
+      "version": "5.4.5-1",
+      "architecture": "aarch64",
+      "filename": "xz-5.4.5-1.aarch64.txpkg",
+      "sha256": "ee72588d0748c3546567c5b83615cab4c4905d481e76c3533ee94a37471a3815",
+      "category": "compression",
+      "depends": "musl liblzma",
+      "description": "XZ and LZMA compression utilities"
+    },
+    {
+      "name": "zip",
+      "version": "3.0-12",
+      "architecture": "aarch64",
+      "filename": "zip-3.0-12.aarch64.txpkg",
+      "sha256": "759185085e2069fc8c5b524269e187bd7e967150417e13bc759b49659beb5f13",
+      "category": "compression",
+      "depends": "musl",
+      "description": "Info-ZIP compression utility"
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1-0",
+      "architecture": "aarch64",
+      "filename": "zlib-1.3.1-0.aarch64.txpkg",
+      "sha256": "963bfcd858dad7ee31c9089701b6bf7b0a2077921d04d1e427650fafb846f381",
+      "category": "libraries",
+      "depends": "musl",
+      "description": "Compression library implementing the deflate compression method"
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.5-8",
+      "architecture": "aarch64",
+      "filename": "zstd-1.5.5-8.aarch64.txpkg",
+      "sha256": "4e2a9cb3806b7699be221d68edbce2c52eb507d26327994b425b6c3a56bfe0e5",
+      "category": "compression",
+      "depends": "musl libzstd",
+      "description": "Zstandard compression utility"
+    }
   ]
 }

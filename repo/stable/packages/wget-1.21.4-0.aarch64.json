@@ -1,0 +1,18 @@
+{
+  "name": "wget",
+  "version": "1.21.4",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Network utility to retrieve files from the Web",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/wget",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "network",
+  "essential": false,
+  "depends": "musl openssl pcre2 libidn2",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "0cc37e477d9151173a36b150dc7fbe06e60955e3e914079fa9784a0453b3a755",
+  "size": 171340,
+  "installed_size": 482809
+}

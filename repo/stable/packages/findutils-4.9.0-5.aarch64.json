@@ -1,0 +1,18 @@
+{
+  "name": "findutils",
+  "version": "4.9.0",
+  "release": 5,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU utilities for finding files",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/findutils",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "system",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "9ff26b9b405fb74bb1c3ca5df8e4bcf522f397d9a6d123757d1434c25465dc1e",
+  "size": 104140,
+  "installed_size": 332416
+}

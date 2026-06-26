@@ -1,0 +1,18 @@
+{
+  "name": "libcap",
+  "version": "2.69",
+  "release": 1,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "POSIX capabilities library",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/libcap2",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "5a9128ab9212fe4abc02c4f2cecbe0b775f089a062979339944e2baf9eaf5605",
+  "size": 17652,
+  "installed_size": 134640
+}

@@ -1,0 +1,18 @@
+{
+  "name": "gzip",
+  "version": "1.13",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU gzip compression utility",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/gzip",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "4e1e73a211f4ead018b378447705c2aa1160cda42b50dbe6f3cb21bf4af4337a",
+  "size": 44820,
+  "installed_size": 171812
+}

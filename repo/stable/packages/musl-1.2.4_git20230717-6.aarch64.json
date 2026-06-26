@@ -1,0 +1,18 @@
+{
+  "name": "musl",
+  "version": "1.2.4_git20230717",
+  "release": 6,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "Musl C library",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/musl",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "",
+  "provides": "libc",
+  "conflicts": "",
+  "sha256": "bd5fcf210bf2edbd156657f236dfc606bc838e47284f3d44fcd8256b0ef7d661",
+  "size": 343744,
+  "installed_size": 723408
+}

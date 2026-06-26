@@ -1,0 +1,18 @@
+{
+  "name": "which",
+  "version": "2.21",
+  "release": 4,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Utility to locate programs in the PATH",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/which",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "system",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "197036471d8157784d889c4df294e508a8e845f0ed8b44f6f3a8f7a8a4df2857",
+  "size": 8548,
+  "installed_size": 67840
+}

@@ -1,0 +1,18 @@
+{
+  "name": "zstd",
+  "version": "1.5.5",
+  "release": 8,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "Zstandard compression utility",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/zstd",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "musl libzstd",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "4e2a9cb3806b7699be221d68edbce2c52eb507d26327994b425b6c3a56bfe0e5",
+  "size": 90472,
+  "installed_size": 335898
+}

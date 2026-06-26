@@ -1,0 +1,18 @@
+{
+  "name": "ncurses-libs",
+  "version": "6.4_p20231125",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "Ncurses terminal handling library",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/ncurses-libs",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "musl ncurses-terminfo",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "02c29874624377fcddb27547974a42fd4a9c9796d426c7ff769ae0e6cb03b22c",
+  "size": 712,
+  "installed_size": 0
+}

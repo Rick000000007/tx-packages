@@ -1,0 +1,18 @@
+{
+  "name": "ca-certificates-bundle",
+  "version": "20250911",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MPL-2.0",
+  "description": "Pre-generated CA certificates bundle",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/ca-certificates-bundle",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "security",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "9d40ec6857abfac1abb59078fd2a1463dd18e216b200cf71ec6fdeb54359ea5a",
+  "size": 123992,
+  "installed_size": 219404
+}

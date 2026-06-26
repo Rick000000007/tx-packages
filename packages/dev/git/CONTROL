@@ -1,7 +1,0 @@
-Package: git
-Version: 2.50.0-1
-Architecture: aarch64
-Maintainer: TX Project
-Section: dev
-Description: Distributed version control system
-Depends:

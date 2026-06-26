@@ -1,0 +1,18 @@
+{
+  "name": "openssh-client",
+  "version": "9.6_p1",
+  "release": 2,
+  "architecture": "aarch64",
+  "license": "BSD-2-Clause",
+  "description": "OpenSSH client",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/openssh-client-default",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "network",
+  "essential": false,
+  "depends": "musl openssl zlib libedit",
+  "provides": "ssh scp sftp ssh-keygen",
+  "conflicts": "",
+  "sha256": "a79e8f64a50674859582f2d565bc705dd9cc9b28318b589a18a42589eb4dc81b",
+  "size": 272248,
+  "installed_size": 985656
+}

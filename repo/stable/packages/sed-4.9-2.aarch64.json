@@ -1,0 +1,18 @@
+{
+  "name": "sed",
+  "version": "4.9",
+  "release": 2,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU stream editor",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/sed",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "system",
+  "essential": false,
+  "depends": "musl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "e2c095536b04103a6dd3327be2ba1d0c0adf19fb19dbf2af5dea0fdb7a158667",
+  "size": 57676,
+  "installed_size": 133329
+}

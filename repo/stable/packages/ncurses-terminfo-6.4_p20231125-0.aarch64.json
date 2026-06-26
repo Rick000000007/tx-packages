@@ -1,0 +1,18 @@
+{
+  "name": "ncurses-terminfo",
+  "version": "6.4_p20231125",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "Ncurses terminal database",
+  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/ncurses-terminfo-base",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "15c9a5a9e7521b2aeba4b5bf2e55e91e9be537f7e92e0f929c02198bf8e94033",
+  "size": 14624,
+  "installed_size": 99607
+}
