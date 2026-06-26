@@ -1,0 +1,22 @@
+{
+  "name": "ca-certificates",
+  "version": "20241231",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MPL-2.0",
+  "description": "CA certificates utilities",
+  "homepage": "https://curl.se/docs/caextract.html",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "security",
+  "essential": false,
+  "depends": "ndk-sysroot ca-certificates-bundle",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "23ef7a6f0820443961a9f62637c206982291b01241f3227b85949d0a2c289853",
+  "size": 105820,
+  "installed_size": 189462,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

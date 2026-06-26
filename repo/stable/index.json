@@ -1,11 +1,11 @@
 {
-  "repository": "TX Official Repository",
-  "format_version": 2,
-  "metadata_version": 2,
-  "architecture": "aarch64",
+  "repository": "TX Bionic Stable",
   "channel": "stable",
-  "url": "https://rick000000007.github.io/tx-packages",
-  "packages": 54,
-  "generated": "2026-06-26T15:02:06Z",
-  "valid_until": "2026-06-26T15:02:06Z"
+  "architecture": "aarch64",
+  "target": "android-bionic",
+  "api_level": "29+",
+  "version": 2,
+  "url": "https://github.com/Rick000000007/tx-packages",
+  "updated": "2026-06-27T04:04:37.993594",
+  "packages_count": 55
 }

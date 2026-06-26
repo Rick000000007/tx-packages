@@ -1,0 +1,22 @@
+{
+  "name": "libgcc",
+  "version": "19.1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Apache-2.0",
+  "description": "LLVM compiler-rt runtime library (replaces libgcc)",
+  "homepage": "https://llvm.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "libgcc",
+  "conflicts": "",
+  "sha256": "d3a3f061a9e04a9bfe9f808822725fcd2fa8920a5caf90cf9720175408cce91a",
+  "size": 2708892,
+  "installed_size": 34625845,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "wget",
+  "version": "1.25.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Web file retrieval utility",
+  "homepage": "https://www.gnu.org/software/wget/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "network",
+  "essential": false,
+  "depends": "ndk-sysroot openssl pcre2 libidn2",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "5d1e4a39ecc77e83d97d52b2edd6d219616f4c108afb9021852fa7e9d5aa40ed",
+  "size": 281548,
+  "installed_size": 745453,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

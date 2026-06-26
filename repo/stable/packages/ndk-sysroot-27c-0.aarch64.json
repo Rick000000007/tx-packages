@@ -1,0 +1,22 @@
+{
+  "name": "ndk-sysroot",
+  "version": "27c",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "NCSA",
+  "description": "Android NDK sysroot headers and libraries",
+  "homepage": "https://developer.android.com/ndk",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "",
+  "provides": "libc",
+  "conflicts": "",
+  "sha256": "aae9189bdfa4ca9b2de798bd8515ee7ab918977ab3ea63e9d081c7f4ffeda8cf",
+  "size": 2109956,
+  "installed_size": 22615050,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

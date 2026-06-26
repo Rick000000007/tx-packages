@@ -1,0 +1,22 @@
+{
+  "name": "liblzma",
+  "version": "5.6.3",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-2.0+",
+  "description": "XZ compression library",
+  "homepage": "https://tukaani.org/xz/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "632c84a9e8cfe184b9a03084ec3f4a5fc6ce3a49c76fbb8fc4809ab0d8583332",
+  "size": 195120,
+  "installed_size": 1055718,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

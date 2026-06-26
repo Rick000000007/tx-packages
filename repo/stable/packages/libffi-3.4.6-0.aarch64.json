@@ -1,0 +1,22 @@
+{
+  "name": "libffi",
+  "version": "3.4.6",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "Foreign function interface library",
+  "homepage": "https://sourceware.org/libffi/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "888b145f5ae04f40c7d8d04afb97180401e65c38bfabf18a1c13d7268bc8e49c",
+  "size": 31604,
+  "installed_size": 147961,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

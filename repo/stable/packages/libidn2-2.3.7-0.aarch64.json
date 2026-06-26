@@ -1,0 +1,22 @@
+{
+  "name": "libidn2",
+  "version": "2.3.7",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "LGPL-3.0+",
+  "description": "Internationalized domain name library",
+  "homepage": "https://www.gnu.org/software/libidn/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot libunistring",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "161b46db0734a0b17a83427eb759250b3aec1f235d96364eb519ae4eb10fb9cc",
+  "size": 106212,
+  "installed_size": 294592,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

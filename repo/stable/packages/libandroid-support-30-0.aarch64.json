@@ -1,0 +1,22 @@
+{
+  "name": "libandroid-support",
+  "version": "30",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Apache-2.0",
+  "description": "Android support library for Bionic libc",
+  "homepage": "https://github.com/termux/termux-packages",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "7999ae2e406c4f4bbd8f37ee600a67e8a0ab50fb1bfafd1999d9a99bd0597fe2",
+  "size": 11060,
+  "installed_size": 29451,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

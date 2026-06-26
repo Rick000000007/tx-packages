@@ -1,0 +1,22 @@
+{
+  "name": "openssh-client",
+  "version": "9.9p1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-2-Clause",
+  "description": "SSH client (ssh, scp, sftp, ssh-keygen)",
+  "homepage": "https://www.openssh.com/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "network",
+  "essential": false,
+  "depends": "ndk-sysroot openssl zlib libedit",
+  "provides": "ssh scp sftp ssh-keygen",
+  "conflicts": "",
+  "sha256": "21b8d7322aa13d99ac7f15c5bcc61b10b710a501bd1bb12962a415f585525f01",
+  "size": 912756,
+  "installed_size": 5773652,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

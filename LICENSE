@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Rick000000007
+Copyright (c) 2024 TX Terminal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Individual packages in this repository retain their original licenses
+as specified in their respective CONTROL and manifest.json files.
+Package binaries are sourced from the Termux project (termux-packages)
+and are subject to their upstream software licenses.

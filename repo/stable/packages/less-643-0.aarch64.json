@@ -1,0 +1,22 @@
+{
+  "name": "less",
+  "version": "643",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Terminal pager",
+  "homepage": "https://www.greenwoodsoftware.com/less/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "utils",
+  "essential": false,
+  "depends": "ndk-sysroot ncurses-libs pcre2",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "f04604da481221e8c6bf782a81edbc02d8ed5027a17747c0223a9f696e20e2b3",
+  "size": 138872,
+  "installed_size": 336833,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

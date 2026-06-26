@@ -1,0 +1,22 @@
+{
+  "name": "libmagic",
+  "version": "5.45",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-2-Clause",
+  "description": "File type identification library",
+  "homepage": "https://www.darwinsys.com/file/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot zlib liblzma libbz2",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "5c586789fdb3438714e0d5e574c757c7656d61389db892e13c2505a0dc9f08cb",
+  "size": 412028,
+  "installed_size": 10979152,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

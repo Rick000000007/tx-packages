@@ -1,0 +1,22 @@
+{
+  "name": "openssl",
+  "version": "3.3.2",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Apache-2.0",
+  "description": "TLS/SSL toolkit",
+  "homepage": "https://www.openssl.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot ca-certificates-bundle",
+  "provides": "libssl libcrypto",
+  "conflicts": "",
+  "sha256": "7a51a2b50308fb4221ca56e957b29d301efa64b0536dc9d16db02544bba0b49c",
+  "size": 2485696,
+  "installed_size": 14364907,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "unzip",
+  "version": "6.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Info-ZIP",
+  "description": "Info-ZIP decompression utility",
+  "homepage": "https://infozip.sourceforge.net/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "bd94ec6010270dd8829a1bcdf3c7508cc2c69e4a31f7c3968369d61c7da6393e",
+  "size": 117692,
+  "installed_size": 267073,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

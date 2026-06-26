@@ -1,0 +1,22 @@
+{
+  "name": "bzip2",
+  "version": "1.0.8",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-4-Clause",
+  "description": "Bzip2 compression utility",
+  "homepage": "https://sourceware.org/bzip2/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "ndk-sysroot libbz2",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "50fc26ca95560b3e8d7fe9931eddbcab8031e070adc4a80af2bbbf877dd79db2",
+  "size": 26748,
+  "installed_size": 112041,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

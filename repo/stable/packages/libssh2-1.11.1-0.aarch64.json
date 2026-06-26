@@ -1,0 +1,22 @@
+{
+  "name": "libssh2",
+  "version": "1.11.1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "SSH2 client library",
+  "homepage": "https://www.libssh2.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot openssl zlib",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "df0806da43716a50a5373155fea7a47eff3ca842e21e7b043fcd7f12c67632cf",
+  "size": 226552,
+  "installed_size": 444216,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

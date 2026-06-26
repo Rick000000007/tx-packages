@@ -1,0 +1,18 @@
+Package: nano
+Version: 8.2
+Release: 0
+Architecture: aarch64
+License: GPL-3.0+
+Description: Lightweight terminal text editor
+Homepage: https://www.nano-editor.org/
+Maintainer: TX Packages <packages@txterminal.dev>
+Category: editors
+Essential: no
+Depends: ndk-sysroot ncurses-libs ncurses-terminfo
+Provides: editor
+Conflicts:
+Replaces:
+Breaks:
+Suggests:
+Recommends:
+Optional:

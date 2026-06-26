@@ -1,73 +1,101 @@
-# TX Packages
+# TX Bionic Package Repository
 
-Official package collection and build system for TX Terminal.
+Complete Android Bionic libc package ecosystem for TX Terminal.
 
 ## Overview
 
-TX Packages provides a complete, production-ready package ecosystem for TX Terminal on Android. All packages are compiled for Android arm64-v8a (AArch64) and distributed in the native `.txpkg` format.
+This repository provides the permanent package ecosystem for TX Terminal, rebuilt from the ground up to use **Android Bionic libc** instead of musl. All packages are native Android ARM64 (aarch64) binaries that execute directly inside TX Terminal without emulation, compatibility layers, or missing interpreter errors.
 
-## Features
+## Key Changes from Previous Repository
 
-- **54 Production Packages**: Core utilities, development tools, networking, compression, and libraries
-- **Native Android Builds**: All packages compiled for Android arm64-v8a
-- **TX-PKG Compatible**: Full compatibility with the TX Package Manager
-- **Automated Build System**: Reproducible builds from Alpine Linux sources
-- **Dependency Resolution**: Proper dependency graph with no circular dependencies
-- **SHA-256 Verification**: Every package cryptographically verified
-- **Repository Metadata**: Auto-generated Packages.json, index.json, and SHA256SUMS
+| Aspect | Old (v1) | New (v2 Bionic) |
+|--------|----------|-----------------|
+| libc | musl | Android Bionic |
+| Interpreter | `/lib/ld-musl-aarch64.so.1` | `/system/bin/linker64` |
+| Source | Alpine Linux APKs | Termux packages + NDK builds |
+| Target | Generic Linux ARM64 | Native Android ARM64 |
+| Compatibility | Requires musl loader | Native Android execution |
+
+## Repository Statistics
+
+- **54+ packages** across all categories
+- **100% Android Bionic** - every binary verified
+- **API Level 29+** compatible
+- **PIE executables** throughout
+- **SHA-256 verification** for all packages
 
 ## Package Categories
 
-### Development
-- `make` - GNU make build automation
-- `pkgconf` - Package compiler and linker metadata (provides pkg-config)
-- `patch` - GNU patch utility
-
 ### Core Utilities
-- `coreutils` - GNU core utilities (file, shell, text tools)
-- `findutils` - GNU file finding utilities
-- `diffutils` - GNU diff utilities
-- `grep` - GNU pattern matching
-- `sed` - GNU stream editor
-- `gawk` - GNU awk
-- `nano` - Terminal text editor
-- `less` - Terminal pager
-- `file` - File type identification
-- `which` - Program locator
-- `procps` - Process utilities (ps, top, free, pgrep, pkill)
-- `psmisc` - Process utilities (fuser, killall, pstree)
+| Package | Description |
+|---------|-------------|
+| `coreutils` | GNU core utilities (file, shell, text tools) |
+| `findutils` | GNU file finding utilities |
+| `diffutils` | GNU diff utilities |
+| `grep` | GNU pattern matching |
+| `sed` | GNU stream editor |
+| `gawk` | GNU awk text processing |
+| `which` | Program locator |
+| `file` | File type identification |
+| `less` | Terminal pager |
 
-### Networking
-- `curl` - URL data transfer tool
-- `wget` - Web file retrieval
-- `openssh-client` - SSH client (ssh, scp, sftp, ssh-keygen)
+### Editors
+| Package | Description |
+|---------|-------------|
+| `nano` | Lightweight terminal text editor |
 
 ### Compression
-- `gzip` - GNU gzip compression
-- `xz` - XZ and LZMA compression
-- `bzip2` - Bzip2 compression
-- `zip` - Info-ZIP compression
-- `unzip` - Info-ZIP decompression
-- `tar` - GNU tar archiver
-- `zstd` - Zstandard compression
-- `lz4` - LZ4 compression
+| Package | Description |
+|---------|-------------|
+| `gzip` | GNU gzip compression |
+| `bzip2` | Bzip2 compression |
+| `xz` | XZ and LZMA compression |
+| `zstd` | Zstandard compression |
+| `lz4` | LZ4 compression |
+| `tar` | GNU tar archiver |
+| `zip` | Info-ZIP compression |
+| `unzip` | Info-ZIP decompression |
+
+### Networking
+| Package | Description |
+|---------|-------------|
+| `curl` | URL data transfer tool |
+| `wget` | Web file retrieval |
+| `openssh-client` | SSH client (ssh, scp, sftp) |
+| `openssl` | TLS/SSL toolkit |
+| `ca-certificates` | CA certificates for SSL/TLS |
+
+### Development
+| Package | Description |
+|---------|-------------|
+| `make` | GNU make build automation |
+| `patch` | GNU patch utility |
+| `pkgconf` | Package compiler/linker metadata |
+| `git` | Distributed version control |
 
 ### Libraries
-- `musl` - Musl C library (provides libc)
-- `openssl` - TLS/SSL toolkit (provides libssl, libcrypto)
-- `zlib` - Deflate compression library
-- `libarchive` - Multi-format archive library
-- `liblzma` - XZ compression library
-- `libbz2` - Bzip2 compression library
-- `libzstd` - Zstandard compression library
-- `pcre2` - Perl-compatible regex library
-- `ncurses-libs` - Terminal handling library
-- `readline` - Line editing library
-- And 20+ more...
+All required libraries including: `zlib`, `liblzma`, `libzstd`, `libbz2`, `libffi`, `libedit`, `readline`, `ncurses`, `pcre2`, `openssl`, `libssh2`, `nghttp2`, `brotli`, `gmp`, `mpfr4`, `libunistring`, `libidn2`, and more.
 
-### Security
-- `ca-certificates` - CA certificates bundle for SSL/TLS
-- `ca-certificates-bundle` - Pre-generated CA certificates
+## Target Platform
+
+- **OS**: Android
+- **Architecture**: arm64-v8a (AArch64)
+- **API Level**: 29+ (Android 10+)
+- **API Level 34**: Compatible (Android 14)
+- **libc**: Android Bionic
+- **Executables**: PIE (Position Independent)
+- **Dynamic Linker**: `/system/bin/linker64`
+
+## What Was Removed
+
+The following packages from the musl-based repository are no longer needed or have been replaced:
+
+| Removed Package | Reason |
+|-----------------|--------|
+| `musl` | Android provides Bionic libc |
+| `libgcc` | Replaced by `libcompiler-rt` |
+| `libstdc++` | Android NDK provides `libc++` |
+| `libandroid-support` | Now included as proper dependency |
 
 ## Quick Start
 
@@ -81,7 +109,7 @@ pkg update
 pkg search <query>
 
 # Install a package
-pkg install nano
+pkg install nano curl git
 
 # Show package info
 pkg info nano
@@ -96,15 +124,15 @@ pkg remove nano
 pkg upgrade
 ```
 
-### Adding the Repository
+### Repository Configuration
 
-Configure in `~/.tx/etc/txpkg/repositories.conf`:
+Add to `~/.tx/etc/txpkg/repositories.conf`:
 
 ```json
 {
   "repositories": [
     {
-      "name": "tx-main",
+      "name": "tx-bionic",
       "url": "https://rick000000007.github.io/tx-packages",
       "channel": "stable",
       "priority": 100,
@@ -114,81 +142,93 @@ Configure in `~/.tx/etc/txpkg/repositories.conf`:
 }
 ```
 
-## Repository Structure
-
-```
-tx-packages/
-|
-├── repo/
-|   └── stable/
-|       ├── Packages.json          # Package catalog
-|       ├── index.json             # Repository metadata
-|       ├── SHA256SUMS             # Package checksums
-|       └── packages/
-|           ├── *.txpkg            # Package archives
-|           ├── *.json             # Package metadata
-|           └── *.sha256           # Package checksums
-|
-├── build/
-|   ├── build_final.py             # Main build script
-|   ├── generate-repo-meta.py      # Metadata generator
-|   ├── validate-repo.py           # Repository validator
-|   └── build.sh                   # Build wrapper
-|
-├── docs/
-|   ├── Package Format.md          # .txpkg specification
-|   ├── Repository Guide.md        # Repository maintenance
-|   ├── Build Guide.md             # Build system documentation
-|   ├── Publishing Guide.md        # Publishing workflow
-|   └── Package Creation Guide.md  # Creating custom packages
-|
-└── README.md                      # This file
-```
-
 ## Building Packages
 
 ### Prerequisites
 
 - Python 3.8+
-- Network access to Alpine Linux mirrors
+- Linux x86_64 build host
+- Network access to Termux package mirrors
+- Android NDK (for source builds)
 
 ### Build All Packages
 
 ```bash
-python3 build/build_final.py
+./build.sh all
+```
+
+### Build Single Package
+
+```bash
+./build.sh pkg curl
 ```
 
 ### Validate Repository
 
 ```bash
-python3 build/validate-repo.py
+./build.sh validate
 ```
 
-See `docs/Build Guide.md` for detailed build instructions.
+### NDK Setup Check
 
-## Creating Custom Packages
+```bash
+export ANDROID_NDK=/path/to/android-ndk
+./build.sh ndk-setup
+```
 
-See `docs/Package Creation Guide.md` for step-by-step instructions on creating `.txpkg` packages from scratch.
+## Build System Architecture
 
-## Documentation
+```
+tx-bionic/
+|
+├── build.sh                    # Main build entry point
+├── build/
+│   ├── build_system.py         # Core build system
+│   ├── packages.py             # Package definitions & mappings
+│   ├── validate_repo.py        # Repository validator
+│   ├── ndk_template.sh         # NDK environment template
+│   └── ndk-scripts/            # Per-package NDK build scripts
+│       ├── 01_zlib.sh
+│       ├── 02_openssl.sh
+│       └── ...
+├── repo/
+│   └── stable/
+│       ├── Packages.json       # Package catalog
+│       ├── index.json          # Repository metadata
+│       ├── SHA256SUMS          # Package checksums
+│       └── packages/           # .txpkg package archives
+└── docs/                       # Documentation
+```
 
-| Document | Description |
-|----------|-------------|
-| [Package Format](docs/Package%20Format.md) | `.txpkg` file format specification |
-| [Repository Guide](docs/Repository%20Guide.md) | Repository structure and maintenance |
-| [Build Guide](docs/Build%20Guide.md) | Build system documentation |
-| [Publishing Guide](docs/Publishing%20Guide.md) | Publishing workflow |
-| [Package Creation Guide](docs/Package%20Creation%20Guide.md) | Creating custom packages |
+## How It Works
 
-## Target Platform
+1. **Download**: Fetches Android Bionic binaries from Termux repository
+2. **Extract**: Decompresses the .deb package
+3. **Transform**: Maps Termux paths to TX package layout (`files/usr/`)
+4. **Metadata**: Updates CONTROL and manifest.json (removes musl deps)
+5. **Validate**: Verifies AArch64, PIE, Bionic-only linkage
+6. **Package**: Creates .txpkg (tar.xz) with CONTROL, manifest.json, checksums, files/
 
-- **OS**: Android
-- **Architecture**: arm64-v8a (AArch64) only
-- **API Level**: 29+
-- **Runtime**: TX Terminal
-- **Libc**: musl (from Alpine Linux)
+## Binary Validation
 
-## Integration with TX Terminal
+Every binary is validated for:
+
+- **Architecture**: Must be `AArch64` (ARM64)
+- **PIE**: Position Independent Executable
+- **Interpreter**: Must use Android Bionic linker (`linker64`), NEVER musl or glibc
+- **Dependencies**: Must only link Bionic libraries, never musl (`ld-musl-`) or glibc (`ld-linux-`)
+
+Validation commands used:
+
+```bash
+file <binary>
+readelf -h <binary>
+readelf -l <binary>
+readelf -d <binary>
+objdump -p <binary>
+```
+
+## TX Terminal Integration
 
 TX Terminal provides:
 - Meefik's `libbusybox.so`
@@ -199,29 +239,45 @@ Packages in this repository:
 - Install into the TX Runtime prefix
 - Assume BusyBox is present
 - Do not include BusyBox or any shell
-- Are compiled for Android arm64-v8a
+- Are native Android Bionic ARM64
 
-## License
+## NDK Source Builds
 
-This repository and build system are licensed under the MIT License. Individual packages retain their original licenses as specified in their `CONTROL` and `manifest.json` files.
+For packages not available in Termux or requiring custom patches, use the provided NDK build scripts:
+
+```bash
+export ANDROID_NDK=/opt/android-ndk
+export API=29
+cd build/ndk-scripts
+./01_zlib.sh
+```
+
+See `docs/BUILD_GUIDE.md` for detailed instructions on building from source with the Android NDK.
 
 ## Contributing
 
 1. Fork the repository
-2. Add or update package definitions in `build/build_final.py`
-3. Build and validate
-4. Create a pull request
+2. Add package definitions in `build/packages.py`
+3. Add NDK build script if needed (for custom builds)
+4. Run `./build.sh validate`
+5. Create a pull request
 
-See `docs/Package Creation Guide.md` and `docs/Publishing Guide.md` for details.
+## Documentation
 
-## Support
+| Document | Description |
+|----------|-------------|
+| [BUILD_GUIDE.md](docs/BUILD_GUIDE.md) | Building packages from source with NDK |
+| [NDK_SETUP.md](docs/NDK_SETUP.md) | Android NDK installation and configuration |
+| [VALIDATION.md](docs/VALIDATION.md) | Package validation procedures |
+| [PACKAGE_FORMAT.md](docs/PACKAGE_FORMAT.md) | .txpkg format specification |
 
-- Issues: https://github.com/Rick000000007/tx-packages/issues
-- TX Terminal: https://github.com/Rick000000007/TX-Terminal-Emu
-- TX-PKG: https://github.com/Rick000000007/tx-pkg
+## License
+
+This build system and repository infrastructure are licensed under the MIT License. Individual packages retain their original licenses as specified in their `CONTROL` and `manifest.json` files.
 
 ## Acknowledgments
 
-- Alpine Linux for the excellent musl-based distribution
-- TX Terminal project for the Android terminal environment
+- **Termux** for providing pre-built Android Bionic packages
+- **TX Terminal** project for the Android terminal environment
+- **Android NDK** team for the native development kit
 - The open-source community for all the packaged software

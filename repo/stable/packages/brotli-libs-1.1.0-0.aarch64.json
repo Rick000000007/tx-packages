@@ -1,0 +1,22 @@
+{
+  "name": "brotli-libs",
+  "version": "1.1.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "Brotli compression library",
+  "homepage": "https://github.com/google/brotli",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "d20aa22da74c6f75005975488b536d470fc88693debe7df3fe84645a361c985c",
+  "size": 344900,
+  "installed_size": 958529,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

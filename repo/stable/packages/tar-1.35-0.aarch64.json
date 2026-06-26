@@ -1,0 +1,22 @@
+{
+  "name": "tar",
+  "version": "1.35",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU tar archiver",
+  "homepage": "https://www.gnu.org/software/tar/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "archive",
+  "essential": false,
+  "depends": "ndk-sysroot acl",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "18aaca2a083ef1ff91b2976b80e5cb06fce4d34eee9db4bd0dee563de0b0e606",
+  "size": 346000,
+  "installed_size": 1214737,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

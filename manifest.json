@@ -1,0 +1,22 @@
+{
+  "name": "nano",
+  "version": "8.2",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Lightweight terminal text editor",
+  "homepage": "https://www.nano-editor.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "editors",
+  "essential": false,
+  "depends": "ndk-sysroot ncurses-libs ncurses-terminfo",
+  "provides": "editor",
+  "conflicts": "",
+  "sha256": "",
+  "size": 0,
+  "installed_size": 833407,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

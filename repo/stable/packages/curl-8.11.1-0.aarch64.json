@@ -1,0 +1,22 @@
+{
+  "name": "curl",
+  "version": "8.11.1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "curl",
+  "description": "Command-line tool for transferring data with URLs",
+  "homepage": "https://curl.se/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "network",
+  "essential": false,
+  "depends": "ndk-sysroot openssl zlib libssh2 nghttp2-libs brotli-libs zstd",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "5b0e1c3246b03842654397e48761d2b8ace7fdd471e62bd59fa16f50ad72fbac",
+  "size": 242908,
+  "installed_size": 386190,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pkgconf",
+  "version": "0.29.2",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-2.0+",
+  "description": "Package compiler and linker metadata",
+  "homepage": "https://www.freedesktop.org/wiki/Software/pkg-config/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "development",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "pkg-config",
+  "conflicts": "",
+  "sha256": "95d049bcf5462700cc4fc17b23b7cf5fdd2fc54ba0d8e1f4525772dfb45dd75c",
+  "size": 33028,
+  "installed_size": 81740,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

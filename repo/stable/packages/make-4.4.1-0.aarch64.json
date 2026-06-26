@@ -1,0 +1,22 @@
+{
+  "name": "make",
+  "version": "4.4.1",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU make build automation tool",
+  "homepage": "https://www.gnu.org/software/make/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "development",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "f26eaaca6ad5cdc751451f69da43422a3e722b4c85f9ae37838e16d24e82c8b7",
+  "size": 241000,
+  "installed_size": 896228,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -5,14 +5,18 @@
   "architecture": "aarch64",
   "license": "GPL-3.0+",
   "description": "GNU gzip compression utility",
-  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/gzip",
+  "homepage": "https://www.gnu.org/software/gzip/",
   "maintainer": "TX Packages <packages@txterminal.dev>",
   "category": "compression",
   "essential": false,
-  "depends": "musl",
+  "depends": "ndk-sysroot",
   "provides": "",
   "conflicts": "",
-  "sha256": "4e1e73a211f4ead018b378447705c2aa1160cda42b50dbe6f3cb21bf4af4337a",
-  "size": 44820,
-  "installed_size": 171812
+  "sha256": "459bdeea760efefbaa7c7bbd505d2e0797fa963fb27d973d19dd95655fb2ea28",
+  "size": 88704,
+  "installed_size": 209632,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
 }

@@ -1,0 +1,22 @@
+{
+  "name": "coreutils",
+  "version": "9.5",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU core utilities (file, shell, text tools)",
+  "homepage": "https://www.gnu.org/software/coreutils/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "utils",
+  "essential": false,
+  "depends": "ndk-sysroot acl gmp libcap",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "76c898a61d0aebc20e002d4274d010d0484243e79ec2deaf8c895c903bc93ac5",
+  "size": 818796,
+  "installed_size": 133279559,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

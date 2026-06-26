@@ -1,0 +1,22 @@
+{
+  "name": "nghttp2-libs",
+  "version": "1.64.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "MIT",
+  "description": "HTTP/2 C library",
+  "homepage": "https://nghttp2.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "f232480d0e2015172c1634006196605a18f37074a6ffc06f6c6ddbde7e6be9ce",
+  "size": 95960,
+  "installed_size": 456008,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

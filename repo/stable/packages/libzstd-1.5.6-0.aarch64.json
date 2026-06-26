@@ -1,0 +1,22 @@
+{
+  "name": "libzstd",
+  "version": "1.5.6",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "Zstandard compression library",
+  "homepage": "https://facebook.github.io/zstd/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "6c42c46dcb7e0c764b347e541711e7bb9bcb2d7be0ea57186b36ca24ec19e3c7",
+  "size": 361360,
+  "installed_size": 3407913,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "findutils",
+  "version": "4.10.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU file finding utilities",
+  "homepage": "https://www.gnu.org/software/findutils/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "utils",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "75ecf57f3b5ab0ee7be1c3b26c69781a104e96af6bf13e09bf3e329d492d1309",
+  "size": 251860,
+  "installed_size": 834467,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

@@ -5,14 +5,18 @@
   "architecture": "aarch64",
   "license": "LGPL-3.0+",
   "description": "Multiple-precision floating-point library",
-  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/mpfr4",
+  "homepage": "https://www.mpfr.org/",
   "maintainer": "TX Packages <packages@txterminal.dev>",
   "category": "libraries",
   "essential": false,
-  "depends": "musl gmp",
+  "depends": "ndk-sysroot gmp",
   "provides": "",
   "conflicts": "",
-  "sha256": "64422c0025ea2da3e7a2f35f44281c1c50a0d5f860c6287ddedf8cfd5cfe78fa",
-  "size": 222404,
-  "installed_size": 627376
+  "sha256": "f60061859d7a3d56619ee362d5a6fb3f9fe75a95f1f539fca6b4cf5bdd6ccb86",
+  "size": 272972,
+  "installed_size": 926942,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
 }

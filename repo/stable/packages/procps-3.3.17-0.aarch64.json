@@ -1,0 +1,22 @@
+{
+  "name": "procps",
+  "version": "3.3.17",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-2.0+",
+  "description": "Process utilities (ps, top, free, pgrep, pkill)",
+  "homepage": "https://gitlab.com/procps-ng/procps",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "utils",
+  "essential": false,
+  "depends": "ndk-sysroot ncurses-libs",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "362c9678969e854678543e1e883582fd299213899392530291b725798fd211dd",
+  "size": 145092,
+  "installed_size": 494468,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

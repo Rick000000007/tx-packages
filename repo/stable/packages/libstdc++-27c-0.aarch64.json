@@ -1,0 +1,22 @@
+{
+  "name": "libstdc++",
+  "version": "27c",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "NCSA",
+  "description": "Android NDK C++ standard library (libc++)",
+  "homepage": "https://developer.android.com/ndk",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot libgcc",
+  "provides": "libstdc++",
+  "conflicts": "",
+  "sha256": "275261d651c874289ced7a563d82fd3ab3ed11099108ae82bc33b89c2bc36ed7",
+  "size": 2109764,
+  "installed_size": 22615050,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

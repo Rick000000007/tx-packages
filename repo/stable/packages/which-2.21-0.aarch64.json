@@ -1,0 +1,22 @@
+{
+  "name": "which",
+  "version": "2.21",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "Program locator utility",
+  "homepage": "https://savannah.gnu.org/projects/which",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "utils",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "e9be02f6d6de175b41d25f54c5ff248241072f6afc4504a570b7174402dd9499",
+  "size": 12812,
+  "installed_size": 29226,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

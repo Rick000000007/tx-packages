@@ -1,0 +1,22 @@
+{
+  "name": "zip",
+  "version": "3.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "Info-ZIP",
+  "description": "Info-ZIP compression utility",
+  "homepage": "https://infozip.sourceforge.net/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "48f75d702740eaefba68a7d9d0f9565d33b7e3b5482cc699d33690ac9215e20b",
+  "size": 142944,
+  "installed_size": 492976,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

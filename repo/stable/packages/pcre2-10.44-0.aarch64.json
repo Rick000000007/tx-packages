@@ -1,0 +1,22 @@
+{
+  "name": "pcre2",
+  "version": "10.44",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-3-Clause",
+  "description": "Perl-compatible regular expression library",
+  "homepage": "https://www.pcre.org/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "libraries",
+  "essential": false,
+  "depends": "ndk-sysroot libandroid-support",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "e98c4814723e48ebb5c8d26cd6741aac4d6b5a306272c4e7c1c03a77e2fd376f",
+  "size": 971552,
+  "installed_size": 3819144,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

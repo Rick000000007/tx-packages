@@ -1,0 +1,22 @@
+{
+  "name": "lz4",
+  "version": "1.10.0",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "BSD-2-Clause",
+  "description": "LZ4 compression utilities",
+  "homepage": "https://lz4.github.io/lz4/",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "compression",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "714b71af8c108019a362739ecfc359ee272addd0ec4fd99fe451761a7f01e8e7",
+  "size": 91116,
+  "installed_size": 705206,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}

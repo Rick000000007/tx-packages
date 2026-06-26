@@ -5,14 +5,18 @@
   "architecture": "aarch64",
   "license": "LGPL-3.0+",
   "description": "GNU multiple precision arithmetic library",
-  "homepage": "https://pkgs.alpinelinux.org/package/v3.19/main/aarch64/gmp",
+  "homepage": "https://gmplib.org/",
   "maintainer": "TX Packages <packages@txterminal.dev>",
   "category": "libraries",
   "essential": false,
-  "depends": "musl",
+  "depends": "ndk-sysroot",
   "provides": "",
   "conflicts": "",
-  "sha256": "6d0d6eea485b44336eb5214c090f31612c39fee9100f3dc0236e66c5926d75a5",
-  "size": 179240,
-  "installed_size": 460560
+  "sha256": "38e66e4565c352f5bd4693d35bad86b9b77b57374158745ddf69885d1a477e61",
+  "size": 328796,
+  "installed_size": 1195372,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
 }

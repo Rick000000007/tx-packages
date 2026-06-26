@@ -1,0 +1,22 @@
+{
+  "name": "patch",
+  "version": "2.7.6",
+  "release": 0,
+  "architecture": "aarch64",
+  "license": "GPL-3.0+",
+  "description": "GNU patch utility",
+  "homepage": "https://savannah.gnu.org/projects/patch",
+  "maintainer": "TX Packages <packages@txterminal.dev>",
+  "category": "development",
+  "essential": false,
+  "depends": "ndk-sysroot",
+  "provides": "",
+  "conflicts": "",
+  "sha256": "9286543140cdaaf581ca59f453c380a1e6544027fc1ab50daf262b8702faca5f",
+  "size": 74044,
+  "installed_size": 168297,
+  "format_version": 2,
+  "metadata_version": 2,
+  "built_for": "android-bionic",
+  "api_level": "29+"
+}
